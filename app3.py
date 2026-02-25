@@ -15,6 +15,7 @@ import textwrap
 import glob
 import time
 import pandas as pd
+import plotly.io as pio
 from datetime import date, datetime
 
 # ─────────────────────────────────────────────────────────────
