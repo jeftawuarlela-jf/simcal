@@ -389,7 +389,16 @@ def main():
     doi_color_map = {doi: doi_colors_list[i] for i, doi in enumerate(target_dois)}
     
     bin_labels = ['0-30', '31-90', '91-180', '181-270', '271-360', '361-540', '541-720', '720+']
-    bin_colors_list = px.colors.qualitative.T10[:len(bin_labels)]
+    bin_colors_list = {
+        '0-30':    '#1f77b4',
+        '31-90':   '#ff7f0e',
+        '91-180':  '#2ca02c',
+        '181-270': '#d62728',
+        '271-360': '#9467bd',
+        '361-540': '#8c564b',
+        '541-720': '#e377c2',
+        '720+':    '#7f7f7f',
+    }
     bin_color_map = {bl: bin_colors_list[i] for i, bl in enumerate(bin_labels)}
     
     # Global y-max values for consistent scaling
