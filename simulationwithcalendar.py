@@ -765,7 +765,10 @@ def main():
 
     # Bin order and discrete colors (matches other charts)
     bin_order = ['0-30', '31-90', '91-180', '181-270', '271-360', '361-540', '541-720', '720+', 'Sunday']
-    bin_display_colors = px.colors.qualitative.T10[:len(bin_labels)]
+    bin_display_colors = {
+        **bin_color_map,
+        'Sunday':  '#eeeeee',
+    }
 
     bins_edges  = [0, 30, 90, 180, 270, 360, 540, 720, float('inf')]
 
