@@ -249,12 +249,11 @@ def main():
     
     
     # Prepare starting inventory
-    print("\nPreparing starting inventory (July 1, 2025)...")
-    july_1 = datetime(2025, 7, 1)
-    starting_data = df[df['tanggal_update'] == july_1].copy()
-    
+    print(f"\nPreparing starting inventory from: {START_DATE.date()}...")
+    starting_data = df[df['tanggal_update'] == START_DATE].copy()
+
     if len(starting_data) == 0:
-        print(f"Warning: No data for July 1, using first available date: {df['tanggal_update'].min()}")
+        print(f"Warning: No data for {START_DATE.date()}, using first available date: {df['tanggal_update'].min().date()}")
         starting_data = df[df['tanggal_update'] == df['tanggal_update'].min()].copy()
     
     sku_info = starting_data.groupby('sku_code').agg({
