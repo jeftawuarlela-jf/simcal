@@ -17,7 +17,7 @@ Previously, this analysis was either skipped entirely or done manually in spread
 
 ## 🚀 Live Demo
 
-🔗 **(https://inboundsim.streamlit.app)**
+🔗 **(https://simulationcalendar.streamlit.app)**
 
 > Upload any compatible inventory CSV to try it live.
 
