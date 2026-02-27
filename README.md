@@ -29,7 +29,7 @@ Previously, this analysis was either skipped entirely or done manually in spread
 |---|---|
 | **Multi-scenario simulation** | Tests every combination of RT × DOI in a single run |
 | **SKU-level simulation** | Tracks each SKU's daily stock, sales, orders in transit, and DOI |
-| **Working-day lead times** | Order arrival is calculated in working days, skipping weekends |
+| **Working-day lead times** | Order arrival is calculated in working days, skipping sundays |
 | **7 interactive Plotly charts** | Grouped bar charts, boxplots — fully zoomable and hoverable |
 | **Inbound calendar heatmap** | Day-by-day view of arrival volume, colored by load bin per scenario |
 | **Live log streaming** | Watch the simulation progress line by line in the browser |
