@@ -168,7 +168,7 @@ The CSV file must contain the following columns:
 | `tanggal_update` | `date` | Inventory snapshot date (used to pick starting stock) |
 | `sku_code` | `string` | Unique SKU identifier |
 | `product_name` | `string` | Product display name |
-| `stock` | `float` | Current stock quantity on the snapshot date |
+| `stock` | `int` | Current stock quantity on the snapshot date |
 | `qpd` | `float` | Average quantity sold per day (historical) |
 | `doi` | `float` | Current days-of-inventory on the snapshot date |
 | `lead_time_days` | `int` | Working days from purchase order to warehouse arrival |
